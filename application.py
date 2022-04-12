@@ -3,6 +3,7 @@ import mysql.connector
 
 app = Flask(__name__)
 
+
 def get_remote_data_base_connection():
     return mysql.connector.connection(
         host="129.146.128.174",
@@ -33,6 +34,7 @@ def test_db_connection():
         return "DB connection successful"
     else:
         return "DB connection is unsuccessful"
+
 
 @app.route("/get/")
 def hello():
