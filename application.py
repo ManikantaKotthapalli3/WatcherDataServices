@@ -24,7 +24,7 @@ def get_db_connection():
         return None
 
 
-@app.route("/testDBConnection")
+@app.route("/testDBConnection/")
 def test_db_connection():
 
     results = get_db_connection()
